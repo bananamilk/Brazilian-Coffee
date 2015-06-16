@@ -11,11 +11,90 @@
 				margin: 0 auto;
 				border: 1px dotted #fff;
 			}
+			.login{
+				width: 360px;
+				height: 348px;
+				margin: 66px 15px 15px 80px;
+				background-color: #fff;
+				/*设置阴影*/
+			}
+			#login-title{
+				border-bottom: 1px solid #dde1e7;
+				width: 360px;
+				height: 76px;
+				font-size: 18px;
+				line-height: 76px;
+				text-align: center;
+				font-family: '微软雅黑';
+			}
+			.bco{
+				margin: 20px 30px 0px;
+				border-radius: 5px;
+				width: 298px;
+				height: 50px;
+			}
+			.inpt{
+				border: 1px solid rgba(55,58,81,0.4);
+				outline: none;
+				color: #cacdd3;
+				font-size: 14px;
+				/*position: relative;*/
+			}
+			/*
+			我想用雪碧图实现这个玩意儿，但是做不到
+			.inpt:before{
+				background: url(images/150616.png) no-repeat;
+				background-position: -20px -20px;
+				content: " ";
+				left: -20px;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+			}*/
+			/*设置聚焦后的样式*/
+			.inpt:focus{
+				border: 1px solid rgb(55,58,81);
+				border-radius: 5px;
+				color: #7b8392;
+			}
+			#nickname{
+				background: url(images/user_normal.png) no-repeat 10px center;
+				padding: 15px 40px;
+			}
+			#nickname:focus{
+				background: url(images/user_focus.png) no-repeat 10px center;
+			}
+			#password{
+				background: url(images/round_normal.png) no-repeat 10px center;
+				padding: 15px 40px;
+			}
+			#password:focus{
+				background: url(images/round_focus.png) no-repeat 10px center;
+			}
+			.but{
+				background-color: #8c91ff;
+				color: #fff;
+				border: 1px solid #8c91ff;
+			}
+			.login a{
+				color: #7b8392;
+				font-size: 12px;
+				text-decoration: none;
+				display: block;
+				margin: 20px 115px;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="content">
 			<div class="login">
+				<div id="login-title">
+					<h3>WELCOME</h3>
+				</div>
+				<input type="text" value="nickname" id="nickname" class="inpt bco">
+				<input type="text" value="password" id="password" class="inpt bco">
+				<button class="but bco">LOGIN</button>
+				<a href="#">Forgot your password?</a>
 			</div><!-- logn -->
 			<div class="nav"></div><!-- nav -->
 			<div class="weather"></div><!-- weather -->
