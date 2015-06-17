@@ -9,6 +9,12 @@
 				font-size: 18px;
 				text-align: center;
 			}
+			.bor{
+				width: 220px;
+				float: left;
+				margin-top: 45px;
+				margin-left: 50px;
+			}
 			.content{
 				width: 1100px;
 				height: 825px;
@@ -23,7 +29,8 @@
 				background-color: #fff;
 				border-radius: 5px;
 				position: relative;
-				margin: 45px 20px 45px 50px;
+				/*margin: 0px 20px 45px 0px;*/
+				margin-bottom: 20px;
 				/*防止外边框间距合并*/
 				float: left;
 			}
@@ -185,3 +192,100 @@
 				cursor: pointer;
 			}
 			/*login*/
+
+			/*graph*/
+			.graph{
+				width: 220px;
+				height: 475px;
+				float: left;
+				background-color: #fff;
+				border-radius: 5px;
+				/*margin: 0px 0px 0px 45px;*/
+				margin-top: 20px;
+			}
+			#graph-title{
+				background-color: #78c8e6;
+				width: 220px;
+				height: 58px;
+				line-height: 58px;
+				box-shadow: 0px 2px #6eb7d2;
+				border-radius: 5px 5px 0px 0px;
+				color: #fff;
+			}
+			#graph-pic{
+				margin: 27px 15px;
+				width: 190px;
+				height: 157px;
+				border-bottom: 1px solid #f4f4f4;
+				text-align: center;
+				margin-bottom: 4px;
+			}
+			#graph-pic p ,#graph-pic span ,#graph-li li{
+				color: #59676b;
+			}
+			#graph-pic p{
+				font-size: 68px;
+
+			}
+			#graph-pic span{
+				font-size: 14px;
+			}
+			#graph-li li{
+				list-style-type: none;
+				font-size: 14px;
+				margin-top: 20px;
+				position: relative;
+				font-weight: bold;
+				margin-left: 43px;
+			}
+			#graph-li li:before ,#graph-li li:after{
+				position: absolute;
+			}
+			#graph-li li:before{
+				content: " ";
+				width: 10px;
+				height: 10px;
+				left: -29px;
+				top: 3px;
+				display: block;
+			}
+			#graph-li li:after{
+				right: 15px;
+				color: #b3b3b3;
+				height: 10px;
+			}
+			#h-li1:before{	
+				background-color: #78c8e6;
+			}
+			#h-li1:after{	
+				content: "40%";
+			}
+
+			#h-li2:before{	
+				background-color: #00cc0a;
+			}
+			#h-li2:after{	
+				content: "8%";
+			}
+
+			#h-li3:before{	
+				background-color: #ffe349;
+			}
+			#h-li3:after{	
+				content: "15%";
+			}
+
+			#h-li4:before{	
+				background-color: #ff895b;
+			}
+			#h-li4:after{	
+				content: "25%";
+			}
+
+			#h-li5:before{	
+				background-color: #7c94be;
+			}
+			#h-li5:after{	
+				content: "12%";
+			}
+			/*graph*/
