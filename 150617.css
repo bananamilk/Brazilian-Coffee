@@ -1,0 +1,146 @@
+*{
+				margin:0px;
+				padding: 0px;
+			}
+			body{
+				/*background-color: #d3dee1;*/
+			}
+			.content{
+				width: 1100px;
+				height: 825px;
+				background: url(images/150617bg.jpg);
+				margin: 30 auto;
+			}
+
+			/*info*/
+			.info{
+				width: 220px;
+				height: 215px;
+				background-color: #fff;
+				border-radius: 5px;
+				position: relative;
+				margin: 45px 20px 45px 50px;
+				/*防止外边框间距合并*/
+				float: left;
+			}
+			#info-title{
+				width: 220px;
+				height: 95px;
+				border-radius: 5px;
+				background: url(images/info-bg.jpg);
+			}
+			#avator{
+				position: absolute;
+				top: 61px;
+				left: 75px;
+				width: 71px;
+				height: 71px;
+				/*border: 1px solid #000;*/
+			}
+			#info-content{
+				height: 83px;
+				width: 220px;
+				margin-top: 37px;
+				text-align: center;
+			}
+			#info-content h2{
+				font-size: 24px;
+				color: #59676b;
+				padding-top: 21px;
+				margin: 0px;
+			}
+			#info-content p{
+				font-size: 12px;
+				color: #b3b3b3;
+				margin-top: 9px;
+			}
+			/*info*/
+
+			/*table*/
+			.tabl{
+				width: 220px;
+				height: 275px;
+				float: left;
+				background-color: #fff;
+				border-radius: 5px;
+				margin: 45px 20px;
+			}
+			#table-title{
+				color: #fff;
+				font-size: 18px;
+				background-color: #ffae00;
+				box-shadow: 0px 2px #eba000;
+				height: 58px;
+				width: 220px;
+				border-radius: 5px 5px 0px 0px;
+			}
+			#table-title h3{
+				text-align: center;
+				line-height: 58px;
+			}
+			#table-content ul{
+				padding: 0px 15px;
+			}
+			#table-content li{
+				border-bottom: 1px solid #f4f4f4;
+				list-style-type: none;
+				height: 40px;
+				width: 190px;
+				position: relative;
+			}
+			#table-content li:after{
+				position: absolute;
+				width: 25px;
+				height: 10px;
+				right: 4px;
+				bottom: -17px;
+				color: #dcdcdc;
+				font-size: 10px;
+			}
+			#li1:after{
+				content: "5,500";
+			}
+			#li2:after{
+				content: "4,500";
+			}
+			#li3:after{
+				content: "3,500";
+			}
+			#li4:after{
+				content: "2,500";
+			}
+			/*table*/
+
+			/*cal*/
+			.cal{
+				width: 220px;
+				height: 275px;
+				background-color: #ff895b;
+				border-radius: 5px;
+				color: #fff;
+				text-align: center;
+				float: left;
+				margin: 45px 20px;
+			}
+			#cal-title{
+				width: 220px;
+				height: 58px;
+				background-color: #e97e55;
+				border-radius: 5px 5px 0px 0px;
+			}
+			#cal-title h3{
+				font-size: 18px;
+				line-height: 58px;
+			}
+			#cal-content{
+				height: 217px;
+			}
+			#cal-content p{
+				font-size: 137px;
+				/*margin-top: 38px;*/
+			}
+			#cal-content h3{
+				font-size: 18px;
+				/*margin-top: 25px;*/
+			}
+			/*cal*/
