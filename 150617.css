@@ -5,6 +5,10 @@
 			body{
 				/*background-color: #d3dee1;*/
 			}
+			h3{
+				font-size: 18px;
+				text-align: center;
+			}
 			.content{
 				width: 1100px;
 				height: 825px;
@@ -67,7 +71,6 @@
 			}
 			#table-title{
 				color: #fff;
-				font-size: 18px;
 				background-color: #ffae00;
 				box-shadow: 0px 2px #eba000;
 				height: 58px;
@@ -75,7 +78,6 @@
 				border-radius: 5px 5px 0px 0px;
 			}
 			#table-title h3{
-				text-align: center;
 				line-height: 58px;
 			}
 			#table-content ul{
@@ -129,7 +131,6 @@
 				border-radius: 5px 5px 0px 0px;
 			}
 			#cal-title h3{
-				font-size: 18px;
 				line-height: 58px;
 			}
 			#cal-content{
@@ -139,8 +140,48 @@
 				font-size: 137px;
 				/*margin-top: 38px;*/
 			}
-			#cal-content h3{
-				font-size: 18px;
-				/*margin-top: 25px;*/
-			}
 			/*cal*/
+
+			/*login*/
+			.login{
+				width: 220px;
+				height: 275px;
+				border-radius: 5px;
+				background-color: #fff;
+				margin: 45px 20px;
+				float: left;
+			}
+			#login-title{
+				background-color: #f9f9f9;
+				width: 220px;
+				height: 58px;
+				box-shadow: 0px 2px #f1f1f1;
+				line-height: 58px;
+				color: #59676b;
+				border-radius: 5px 5px 0px 0px;
+			}
+			.login input ,.login button{
+				width: 180px;
+				height: 45px;
+				text-align: center;
+				line-height: 45px;
+				margin: 20px 20px 0px;
+				border-radius: 5px;
+			}
+			.login input{
+				color: #b3b3b3;
+				background-color: #f4f4f4;
+				box-shadow: 0px 2px #e5e5e5 inset;
+				border: none;
+				outline: none;
+				font-size: 14px;
+			}
+			.login button{
+				color: #fff;
+				background-color: #70d572;
+				box-shadow: 0px 2px #60ba62;
+				font-size: 18px;
+				border: none;
+				cursor: pointer;
+			}
+			/*login*/
