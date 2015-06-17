@@ -3,93 +3,147 @@
 	margin: 0px;
 }
 body{
-				background-color: #e1e7ed;
-			}
-			.content{
-				width: 1300px;
-				height: 1280px;
-				margin: 0 auto;
-				border: 1px dotted #fff;
-			}
-			.shadow{
-				box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-			}
-			/*login*/
-			.login{
-				width: 360px;
-				height: 348px;
-				margin: 66px 15px 15px 80px;
-				background-color: #fff;
-				/*设置阴影*/
-			}
-			#login-title{
-				border-bottom: 1px solid #dde1e7;
-				width: 360px;
-				height: 76px;
-				font-size: 18px;
-				line-height: 76px;
-				text-align: center;
-				font-family: '微软雅黑';
-			}
-			.bco{
-				margin: 20px 30px 0px;
-				border-radius: 5px;
-				width: 298px;
-				height: 50px;
-			}
-			.inpt{
-				border: 1px solid rgba(55,58,81,0.4);
-				outline: none;
-				color: #cacdd3;
-				font-size: 14px;
-				/*position: relative;*/
-			}
-			/*
-			我想用雪碧图实现这个玩意儿，但是做不到
-			.inpt:before{
-				background: url(images/150616.png) no-repeat;
-				background-position: -20px -20px;
-				content: " ";
-				left: -20px;
-				width: 20px;
-				height: 20px;
-				position: absolute;
-			}*/
-			/*设置聚焦后的样式*/
-			.inpt:focus{
-				border: 1px solid rgb(55,58,81);
-				border-radius: 5px;
-				color: #7b8392;
-			}
-			#nickname{
-				background: url(images/user_normal.png) no-repeat 10px center;
-				padding: 15px 40px;
-			}
-			#nickname:focus{
-				background: url(images/user_focus.png) no-repeat 10px center;
-			}
-			#password{
-				background: url(images/round_normal.png) no-repeat 10px center;
-				padding: 15px 40px;
-			}
-			#password:focus{
-				background: url(images/round_focus.png) no-repeat 10px center;
-			}
-			.but{
-				background-color: #8c91ff;
-				color: #fff;
-				border: 1px solid #8c91ff;
-				cursor: pointer;
-			}
-			.login a{
-				color: #7b8392;
-				font-size: 12px;
-				text-decoration: none;
-				display: block;
-				margin: 20px 115px;
-			}
-			/*login*/
+	background-color: #e1e7ed;
+}
+.bro{
+	margin: 66px 30px 30px 80px;
+}
+.content{
+	width: 1300px;
+	height: 1280px;
+	margin: 0 auto;
+	border: 1px dotted #fff;
+}
+.shadow{
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
 
-			/*weather*/
+/*login*/
+.login{
+	width: 360px;
+	height: 348px;
+	background-color: #fff;
+	/*设置阴影*/
+}
+#login-title{
+	border-bottom: 1px solid #dde1e7;
+	width: 360px;
+	height: 76px;
+	font-size: 18px;
+	line-height: 76px;
+	text-align: center;
+	font-family: '微软雅黑';
+}
+.bco{
+	margin: 20px 30px 0px;
+	border-radius: 5px;
+	width: 298px;
+	height: 50px;
+}
+.inpt{
+	border: 1px solid rgba(55,58,81,0.4);
+	outline: none;
+	color: #cacdd3;
+	font-size: 14px;
+	/*position: relative;*/
+}
+/*
+我想用雪碧图实现这个玩意儿，但是做不到
+.inpt:before{
+	background: url(images/150616.png) no-repeat;
+	background-position: -20px -20px;
+	content: " ";
+	left: -20px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}*/
+/*设置聚焦后的样式*/
+.inpt:focus{
+	border: 1px solid rgb(55,58,81);
+	border-radius: 5px;
+	color: #7b8392;
+}
+#nickname{
+	background: url(images/user_normal.png) no-repeat 10px center;
+	padding: 15px 40px;
+}
+#nickname:focus{
+	background: url(images/user_focus.png) no-repeat 10px center;
+}
+#password{
+	background: url(images/round_normal.png) no-repeat 10px center;
+	padding: 15px 40px;
+}
+#password:focus{	
+	background: url(images/round_focus.png) no-repeat 10px center;
+}
+.but{
+	background-color: #8c91ff;
+	color: #fff;
+	border: 1px solid #8c91ff;
+	cursor: pointer;
+}
+.login a{
+	color: #7b8392;
+	font-size: 12px;
+	text-decoration: none;
+	display: block;
+	margin: 20px 115px;
+}
+/*login*/
+
+/*nav*/
+.nav{
+	width: 360px;
+	height: 88px;
+	background-color: #fff;
+	margin-top: 30px;
+}
+.nav li{
+	list-style-type: none;
+	float: left;
+	
+	display: block;
+
+}
+.nav i{
+	display: block;
+	width: 22px;
+	height: 20px;
+	margin: 34px;
+	background: url(images/150616icon.png) no-repeat center center;
+}
+#nav-li1{
+	background-position: 0px 0px;
+}
+#nav-li2{
+	background-position: 0px -20px;
+}
+#nav-li3{
+	background-position: 0px -40px;
+}
+#nav-li4{
+	background-position: 0px -60px;
+}
+
+.nav li:hover{
+	box-shadow: 0px 2px #8c91ff inset;
+}
+.nav li:hover #nav-li1{
+	background-position: 0px -80px;
+}
+.nav li:hover #nav-li2{
+	background-position: 0px -100px;
+}
+.nav li:hover #nav-li3{
+	background-position: 0px -120px;
+}
+.nav li:hover #nav-li4{
+	background-position: 0px -140px;
+}
+/*nav*/
+
+/*weather*/
 			
-			/*weather*/
+/*weather*/
