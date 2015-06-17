@@ -407,6 +407,7 @@
 				height: 275px;
 				background-color: #fff;
 				border-radius: 5px;
+				color: #59676b;
 			}
 			#data-title{
 				height: 58px;
@@ -417,8 +418,51 @@
 			}
 			/*data-c*/
 
+			/*sign*/
+			.sign{
+				width: 220px;
+				height: 275px;
+				background-color: #fff;
+				border-radius: 5px;
+				color: #59676b;
+			}
+			#sign-title{
+				height: 58px;
+				line-height: 58px;
+				background-color: #f9f9f9;
+				box-shadow: 0px 2px #f1f1f1;
+				border-radius: 5px 5px 0px 0px;
+			}
+			.sign input ,.sign button{
+				width: 180px;
+				height: 45px;
+				text-align: center;
+				line-height: 45px;
+				margin: 20px 20px 0px;
+				border-radius: 5px;
+			}
+			.sign input{
+				color: #b3b3b3;
+				background-color: #f4f4f4;
+				box-shadow: 0px 2px #e5e5e5 inset;
+				border: none;
+				outline: none;
+				font-size: 14px;
+			}
+			.sign button{
+				color: #fff;
+				background-color: #78c8e6;
+				box-shadow: 0px 2px #6eb7d2;
+				font-size: 18px;
+				width: 180px;
+				height: 45px;
+				border: none;
+				cursor: pointer;
+			}
+			/*sign*/
+
 			/*d-bor button*/
-			.d-bor button{
+			.bt{
 				width: 220px;
 				height: 45px;
 				border-radius: 5px;
@@ -428,6 +472,7 @@
 				border: none;
 				background: url(images/150617icor.png) no-repeat left center;
 				color: #fff;
+				font-size: 16px;
 			}
 			#bt-f{
 				background-color: #5e76b3;
