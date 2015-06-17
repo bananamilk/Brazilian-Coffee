@@ -305,12 +305,13 @@
 				background-color: #fff;
 				border-radius: 5px;
 			}
-			.sel1 h3{
+			.sel1 h3 ,#sel2-title h3{
 				font-size: 14px;
 				text-align: left;
 				margin-left: 18px;
 				width: 160px;
 				float: left;
+				color: #59676b;
 			}
 			.sel1 img{
 				float: left;
@@ -320,5 +321,49 @@
 			/*sel1*/
 
 			/*sel2*/
-			.sel2{}
+			.sel2{
+				height: 256px;
+				width: 220px;
+				border-radius: 5px;
+				margin-top: 40px;
+			}
+			#sel2-title{
+				background: url(images/sel-ico-n.png) no-repeat 189px center;
+				background-color: #f9f9f9;
+				border-radius: 5px;
+				height: 54px;
+				line-height: 52px;
+			}
+			.sel2:hover #sel2-title{
+				box-shadow: 0px 2px #78c8e6;
+				background: url(images/sel-ico-s.png) no-repeat 189px center;
+				background-color: #f9f9f9;
+				border-radius: 5px 5px 0px 0px;
+			}
+			#sel2-content ul{
+				margin-top: 2px;
+				display: none;
+				background-color: #fff;
+				border-radius: 0px 0px 5px 5px;
+			}
+			.sel2:hover #sel2-content ul{
+				display: block;
+			}
+			#sel2-content li{
+				list-style-type: none;
+				height: 40px;
+				border-bottom: 1px solid #f4f4f4;
+				line-height: 40px;
+				color: #b3b3b3;
+				padding-left: 28px;
+				font-size: 14px;
+			}
+			#sel2-li5{
+				border: none;
+				border-radius: 0px 0px 5px 5px;
+			}
+			#sel2-content li:hover{
+				background-color: #78c8e6;
+				color: #fff;
+			}
 			/*sel2*/
