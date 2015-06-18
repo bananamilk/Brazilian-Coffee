@@ -145,5 +145,59 @@ body{
 /*nav*/
 
 /*weather*/
-			
+.weather{
+	height: 466px;
+	width: 360px;
+	background-color: #fff;
+}
+#weather-pic{
+	height: 361px;
+	background-color: #8c91ff;
+	color: #fff;
+}
+#weather-local{
+	height: 47px;
+}
+#weather-local input{
+	margin: 30px 30px 0px;
+	background-color: #8c91ff;
+	/*outline: #fff solid groove;*/
+	border: none;
+	color: #fff;
+	font-size: 18px;
+}
+#weather-pic p{
+	font-size: 96px;
+	/*line-height: 361px;*/
+	margin-left: 97px;
+	margin-top: 93px;
+}
+#weather-pic span{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+}
+#weather-info li{
+	width: 120px;
+	float: left;
+	display: block;
+	list-style-type: none;
+	text-align: center;
+	padding-top: 30px;
+	position: relative;
+}
+#weather-info li:after{
+	content: " ";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 47px;
+	top: 55px;
+}
+#wea-li1:after ,#wea-li2:after{
+	background: url(images/150616wr.png);
+}
+#wea-li3:after{
+	background: url(images/150616wc.png);
+}
 /*weather*/
