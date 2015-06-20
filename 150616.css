@@ -7,6 +7,7 @@ body{
 }
 .bro{
 	margin: 66px 30px 30px 80px;
+	float: left;
 }
 .content{
 	width: 1300px;
@@ -201,3 +202,35 @@ body{
 	background: url(images/150616wc.png);
 }
 /*weather*/
+
+/*cal*/
+.cal{
+	width: 360px;
+	height: 368px;
+	background-color: #fff;
+	float: left;
+	margin-top: 30px;
+}
+#cal-title{
+	height: 90px;
+	content: #fff;
+	background-color: #8c91ff;
+	line-height: 90px;
+	text-align: center;
+	color: #fff;
+}
+#cal-title h3{
+	display: block;
+	position: relative;
+}
+#cal-title h3:before ,#cal-title h3:after{
+	position: absolute;
+	content: " ";
+}
+#cal-title h3:before{
+	background: url();
+}
+#cal-title h3:after{
+	background: url();
+}
+/*cal*/
