@@ -1,9 +1,97 @@
 <html>
 	<head>
 		<title>demo03</title>
-		<style type="text/css"></style>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+				text-decoration: none;
+			}
+			.content{
+				width: 600px;
+				height: 400px;
+				margin: 300 auto;
+				overflow: hidden;
+				border: 3px solid #333;
+				position: relative;
+			}
+			.pic{
+				width: 4200px;
+				height: 400px;
+				position: absolute;
+				z-index: 1;
+			}
+			.pic img{
+				float: left;
+			}
+			.but{
+				width: 100px;
+				height: 10px;
+				position: absolute;
+				z-index: 2;
+				bottom: 20px;
+				left: 250px;
+			}
+			.but span { 
+				cursor: pointer; 
+				float: left; 
+				border: 1px solid #fff; 
+				width: 10px; 
+				height: 10px; 
+				border-radius: 50%; 
+				background: #333; 
+				margin-right: 5px;
+			}
+        	.but .on {  
+        		background: orange;
+        	}
+        	.arrow { 
+        		cursor: pointer; 
+        		display: none; 
+        		line-height: 39px; 
+        		text-align: center; 
+        		font-size: 36px; 
+        		font-weight: bold; 
+        		width: 40px; 
+        		height: 40px;  
+        		position: absolute; 
+        		z-index: 2; 
+        		top: 180px; 
+        		background-color: rgba(0,0,0,.3); 
+        		color: #fff;}
+        	.arrow:hover { 	
+        		background-color: rgba(0,0,0,.7);}
+        	.content:hover .arrow { 
+        		display: block;
+        	}
+        	#prev { 
+        		left: 20px;
+        	}
+        	#next { 
+        		right: 20px;
+        	}
+		</style>
 	</head>
 	<body>
-		<div class="content"></div><!-- content -->
+		<div class="content">
+			<div class="pic">
+				<img src="images/150624/5.jpg"><!-- 衔接图片 -->
+				<img src="images/150624/1.jpg">
+				<img src="images/150624/2.jpg">
+				<img src="images/150624/3.jpg">
+				<img src="images/150624/4.jpg">
+				<img src="images/150624/5.jpg">
+				<img src="images/150624/1.jpg"><!-- 衔接图片 -->
+			</div><!-- pic -->
+			<div class="but">
+				<span index="1" class="on"></span>
+				<span index="2"></span>
+				<span index="3"></span>
+				<span index="4"></span>
+				<span index="5"></span>
+			</div><!-- but -->
+			<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+			<a href="javascript:;" id="next" class="arrow">&gt;</a>
+		</div><!-- content -->
 	</body>
 </html>
