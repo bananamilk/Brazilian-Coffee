@@ -8,15 +8,18 @@ window.onload = function(){
 	var left = parseInt(pic.style.left);
 
 	next.onclick = function(){
-		/*if (left > -600) {
-			pic.style.left = -3000 + 'px';
-		};*/
+		if (parseInt(pic.style.left) <= -3000) { /*无限滚动*/
+			pic.style.left = -600 + 'px';
+			return;
+		};
+		
 		pic.style.left = parseInt(pic.style.left) -600 + 'px';
 	}
 	prev.onclick = function(){
-		/*if (left < -3000) {
-			pic.style.left = -600 + 'px';
-		};*/
-		pic.style.left = parseInt(pic.style.left) -600 + 'px';
+		if (parseInt(pic.style.left) >= -600) { /*无限滚动*/
+			pic.style.left = -3000 + 'px';
+			return;
+		};
+		pic.style.left = parseInt(pic.style.left) +600 + 'px';
 	}
 }
