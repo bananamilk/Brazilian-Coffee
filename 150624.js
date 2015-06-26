@@ -6,9 +6,17 @@ window.onload = function(){
 	var next=document.getElementById('next');
 
 	var left = parseInt(pic.style.left);
+	var index = 1; /*打组合拳的时候用*/
 
 	next.onclick = function(){
-		showButN();
+		/*showButN();*/
+		if(index == 5){
+			index = 1;
+		}
+		else{
+			index++;
+		}
+		showBut();
 		if (parseInt(pic.style.left) <= -3000) { /*无限滚动*/
 			pic.style.left = -600 + 'px';	
 			return;
@@ -16,7 +24,14 @@ window.onload = function(){
 		pic.style.left = parseInt(pic.style.left) -600 + 'px';
 	}
 	prev.onclick = function(){
-		showButP();
+		/*showButP();*/
+		if(index == 1){
+			index = 5;
+		}
+		else{
+			index--;
+		}
+		showBut();
 		if (parseInt(pic.style.left) >= -600) { /*无限滚动*/
 			pic.style.left = -3000 + 'px';
 			return;
@@ -24,14 +39,19 @@ window.onload = function(){
 		pic.style.left = parseInt(pic.style.left) +600 + 'px';
 	}
 
-	/*function showBut(){
-		for(var i = 0, length1 = but.length; i < length1; i++){
-			but[i].className = 'on';
+/*箭头的组合拳*/
+	function showBut(){
+		for(var i = 0; i < but.length; i++){
+			if(but[i].className == 'on'){
+				but[i].className = '';
+				break;
+			}
 		}
-	}*/
+		but[index - 1].className = 'on';
+	}
 
-	/*点击next时的逻辑*/
-	function showButN(){
+/*点击next时的逻辑*/
+	/*function showButN(){
 		var demo = parseInt(pic.style.left)/(-600);
 		if (demo == 5) {
 			but[demo-1].className = '';
@@ -40,10 +60,10 @@ window.onload = function(){
 		};
 		but[demo].className = 'on';
 		but[demo-1].className = '';
-	}
+	}*/
 
-	/*点击prev时的逻辑*/
-	function showButP(){
+/*点击prev时的逻辑*/
+	/*function showButP(){
 		var demo = parseInt(pic.style.left)/(-600);
 		if (demo == 1) {
 			but[4].className = 'on';
@@ -52,5 +72,5 @@ window.onload = function(){
 		};
 		but[demo-2].className = 'on';
 		but[demo-1].className = '';
-	}
+	}*/
 }
