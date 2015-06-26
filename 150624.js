@@ -7,6 +7,7 @@ window.onload = function(){
 
 	var left = parseInt(pic.style.left);
 	var index = 1; /*打组合拳的时候用*/
+	var interval=3000;/*设置自动切图的时间*/
 
 	next.onclick = function(){
 		/*showButN();*/
@@ -73,4 +74,20 @@ window.onload = function(){
 		but[demo-2].className = 'on';
 		but[demo-1].className = '';
 	}*/
+
+/*自动播放图片*/
+	function play(){
+		timer = setTimeout(function(){
+			next.onclick();
+			play();
+		}, interval);
+	}
+
+	function stop(){
+		clearTimeout(timer);
+	}
+	play();
+
+	content.onmouseover = stop;
+	content.onmouseout = play;
 }
