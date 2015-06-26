@@ -5,7 +5,7 @@ window.onload = function(){
 	var prev=document.getElementById('prev');
 	var next=document.getElementById('next');
 
-	var left = parseInt(pic.style.left);
+	
 	var index = 1; /*打组合拳的时候用*/
 	var interval=3000;/*设置自动切图的时间*/
 
@@ -22,7 +22,8 @@ window.onload = function(){
 			pic.style.left = -600 + 'px';	
 			return;
 		};
-		pic.style.left = parseInt(pic.style.left) -600 + 'px';
+		/*pic.style.left = parseInt(pic.style.left) -600 + 'px';*/
+		animate(-600);
 	}
 	prev.onclick = function(){
 		/*showButP();*/
@@ -37,7 +38,8 @@ window.onload = function(){
 			pic.style.left = -3000 + 'px';
 			return;
 		};
-		pic.style.left = parseInt(pic.style.left) +600 + 'px';
+		/*pic.style.left = parseInt(pic.style.left) +600 + 'px';*/
+		animate(600);
 	}
 
 /*箭头的组合拳*/
@@ -90,4 +92,21 @@ window.onload = function(){
 
 	content.onmouseover = stop;
 	content.onmouseout = play;
+
+	for(var i = 0; i < but.length; i++){
+		but[i].onclick = function(){
+			if(this.className == 'on'){
+				return;
+			}
+			var nIndex = parseInt(this.getAttribute('index'));
+			var offset = -600 * (nIndex - index);
+			animate(offset);
+			index = nIndex;
+			showBut();
+		}
+	}
+
+	function animate(offset){
+		pic.style.left = parseInt(pic.style.left) + offset + 'px';
+	}
 }
