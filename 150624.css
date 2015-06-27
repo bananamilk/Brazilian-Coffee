@@ -49,6 +49,9 @@
 #but span{
 	width: 25px;
 }
+#but span:hover{
+	cursor: pointer;
+}
 #but i a{
 	text-decoration: none;
 	color: #fff;
