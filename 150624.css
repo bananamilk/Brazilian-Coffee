@@ -20,7 +20,50 @@
 #pic img{
 	float: left;
 }
+/*150626*/
+/*#con{
+	height: 80px;
+	padding: 0px 20px 0px;
+	z-index: 2;
+	position: absolute;
+	bottom: 0px;
+}*/
 #but{
+	height: 25px;
+	width: 600px;
+	z-index: 3;
+	position: absolute;
+	bottom: 0px;
+}
+#but span , #but i{
+	height: 25px;
+	background-color: rgba(0,0,0,.6);
+	display: block;
+	float: right;
+	color: #fff;
+	line-height: 25px;
+	text-align: center;
+	/*border-right: #000 1px solid;*/
+	font-size: 10px;
+}
+#but span{
+	width: 25px;
+}
+#but i a{
+	text-decoration: none;
+	color: #fff;
+	font-style: normal;
+	padding: 0px 5px 0px;
+}
+#but i a:hover{
+	color: red;
+}
+#but .on{
+	background-color: rgba(255,255,255,.7);
+	color: #000;
+}
+/*150624*/
+/*#but{
 	width: 100px;
 	height: 10px;
 	position: absolute;
@@ -67,4 +110,4 @@
 }
 #next { 
 	right: 20px;
-}
+}*/
