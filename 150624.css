@@ -20,6 +20,9 @@
 #pic img{
 	float: left;
 }
+#pic:hover{
+	cursor: pointer;
+}
 /*150626*/
 /*#con{
 	height: 80px;
